@@ -56,7 +56,7 @@ A=20 B=20 C=20 D=20
 
 ### Resultados usando `auto`
 
-Podemos ver que no caso do `auto`, onde o OpenMP deixa a decisão para o compilador (em tempo de compilação) ou para o sistema (em tempo de execução), meu computador usa o `static`. Como o `auto` ignora o `chunk_size`, ambas as saídas são iguais:
+No caso do `auto`, onde o OpenMP deixa a decisão para o compilador (em tempo de compilação) ou para o sistema (em tempo de execução), meu computador usa o `static`. Como o `auto` ignora o `chunk_size`, ambas as saídas são iguais:
 
 ```
 Using mutex, schedule = omp_sched_auto and chunk_size = default (expecting correct results)
@@ -95,6 +95,8 @@ A=16 B=13 C=30 D=21
 ```
 
 ### Usando runtime sem chamar `omp_set_schedule`
+
+No caso do meu sistema, o algoritmo usado foi o `dynamic`
 
 ```
 Using mutex and schedule = runtime (expecting correct results)
