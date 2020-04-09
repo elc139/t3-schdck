@@ -1,5 +1,4 @@
 Fonte: http://jakascorner.com/blog/2016/06/omp-for-scheduling.html
-Resumo tipos de escalonamento
 
 ## `static`:
 
